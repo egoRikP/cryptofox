@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, height=device-height initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -15,10 +15,10 @@
 <main>
     <section id="home" class="header-section">
         <div class="wrapper">
-            <img src="./src/images/background.png" class="header-section-background" alt="">
+            <img src="/src/images/background.png" class="header-section-background" alt="">
             <header class="header-inline">
                 <div class="logo">
-                    <img src="./src/images/logo.png" alt="">
+                    <img src="/src/images/logo.png" alt="">
                     <div>CRYPTOFOX</div>
                 </div>
                 <div class="menu">
@@ -32,11 +32,28 @@
                     </nav>
                     <div class="menu-buttons">
                         <button class="sponsor button-popup btn-sponsor">Become Sponsor</button>
-                        <button class="register button-popup btn-register">
-                            Register Now
-                        </button>
+                        <button class="register button-popup btn-register">Register Now</button>
                     </div>
                 </div>
+                <div class="responsive-menu">
+                    <div class="responsive-menu-content">
+                        <nav class="menu-navigation">
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About Event</a></li>
+                                <li><a href="#speakers">Speakers</a></li>
+                                <li><a href="#sponsors">Sponsors</a></li>
+                            </ul>
+                        </nav>
+                        <div class="menu-buttons">
+                            <button class="sponsor button-popup btn-sponsor">Become Sponsor</button>
+                            <button class="register button-popup btn-register">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="menu-burger-button">
+                    <img class="menu-burger" src="src/images/hamburger-icon.jpg" alt="">
+                </button>
             </header>
             <h1 class="header-title">
                 July 10, 2023 at 6:30 pm.
@@ -79,23 +96,21 @@
             <h2 class="title">
                 Discussion Topics:
             </h2>
-            <div class="topics-list-container">
-                <ol class="topics-list">
-                    <li>WHAT WEB 3.0 MEANS FOR ENTERPRISES (Sunny Lu)</li>
-                    <li>VALUE CREATION IN THE METAVERSE (Gracy Chen)</li>
-                    <li>THE ROLE OF STABLECOINS IN A DECENTRALIZED ECOSYSTEM (Nena Dokuzov & Jean Charles Gaudechon)
-                    </li>
-                    <li>DAOS: NEW BREED OF INTERNET-NATIVE ORGANIZATIONS (Max Kordek)</li>
-                    <li>MAXIMIZING ESG IMPACT WITH BLOCKCHAIN (Helen Hai)</li>
-                    <li>BRIDGING DEFI AND CEFI (Jason Allegrante)</li>
-                    <li>WEB 3 GAMING: THE NEW FRONTIER? (Sunny Lu)</li>
-                    <li>DECRYPTING THE REGULATORY LANDSCAPE OF VIRTUAL ASSETS (Reece Merrick)</li>
-                    <li>CENTRAL BANK DIGITAL CURRENCIES, AND CROSS-BORDER PAYMENTS (Mohammed Alblooshi)</li>
-                    <li>WEB 3: THE FUTURE IS HERE AND NOW (Sunny Lu)</li>
-                    <li>NFT MARKET OVERVIEW: TRENDS & OPPORTUNITIES (Alex Zinder & Nicole Purin)</li>
-                    <li>INTEROPERABILITY - CHALLENGES AND OPPORTUNITIES (Dina Sam'an)</li>
-                </ol>
-            </div>
+            <ol class="topics-list">
+                <li>WHAT WEB 3.0 MEANS FOR ENTERPRISES (Sunny Lu)</li>
+                <li>VALUE CREATION IN THE METAVERSE (Gracy Chen)</li>
+                <li>THE ROLE OF STABLECOINS IN A DECENTRALIZED ECOSYSTEM (Nena Dokuzov & Jean Charles Gaudechon)
+                </li>
+                <li>DAOS: NEW BREED OF INTERNET-NATIVE ORGANIZATIONS (Max Kordek)</li>
+                <li>MAXIMIZING ESG IMPACT WITH BLOCKCHAIN (Helen Hai)</li>
+                <li>BRIDGING DEFI AND CEFI (Jason Allegrante)</li>
+                <li>WEB 3 GAMING: THE NEW FRONTIER? (Sunny Lu)</li>
+                <li>DECRYPTING THE REGULATORY LANDSCAPE OF VIRTUAL ASSETS (Reece Merrick)</li>
+                <li>CENTRAL BANK DIGITAL CURRENCIES, AND CROSS-BORDER PAYMENTS (Mohammed Alblooshi)</li>
+                <li>WEB 3: THE FUTURE IS HERE AND NOW (Sunny Lu)</li>
+                <li>NFT MARKET OVERVIEW: TRENDS & OPPORTUNITIES (Alex Zinder & Nicole Purin)</li>
+                <li>INTEROPERABILITY - CHALLENGES AND OPPORTUNITIES (Dina Sam'an)</li>
+            </ol>
             <img class="bitcoin1" src="./src/images/bitcoin1.png" alt="">
             <img class="bitcoin2" src="./src/images/bitcoin2.png" alt="">
         </div>
@@ -103,84 +118,82 @@
     <section id="speakers" class="speakers-section">
         <div class="wrapper">
             <h2 class="title">SPEAKERS</h2>
-            <div class="speakers">
-                <ol class="speakers-list">
-                    <li class="speaker-card">
-                        <img class="speaker" src="./src/images/speaker1.png" alt="">
-                        <div class="speaker-name">Sunny Lu</div>
-                        <div class="speaker-caption">(Vechain)</div>
-                    </li>
-                    <li class="speaker-card">
-                        <img class="speaker" src="./src/images/speaker2.png" alt="">
-                        <div class="speaker-name">Helen Hai</div>
-                        <div class="speaker-caption">(Binance)</div>
-                    </li>
-                    <li class="speaker-card">
-                        <img class="speaker" src="./src/images/speaker3.png" alt="">
-                        <div class="speaker-name">Alex Zinder</div>
-                        <div class="speaker-caption">(Ledger Enterprise)</div>
-                    </li>
-                    <li class="speaker-card">
-                        <img class="speaker" src="./src/images/speaker4.png" alt="">
-                        <div class="speaker-name">Gracy Chen</div>
-                        <div class="speaker-caption">(Bitget)</div>
-                    </li>
-                    <li class="speaker-card">
-                        <img class="speaker" src="./src/images/speaker5.png" alt="">
-                        <div class="speaker-name">Mohammed Alblooshi</div>
-                        <div class="speaker-caption">(Dubai International Financial Centre Authority)</div>
-                    </li>
-                    <li class="speaker-card">
-                        <img class="speaker" src="./src/images/speaker6.png" alt="">
-                        <div class="speaker-name">Max Kordek</div>
-                        <div class="speaker-caption">(Lisk)</div>
-                    </li>
-                    <li class="speaker-card">
-                        <img class="speaker" src="./src/images/speaker7.png" alt="">
-                        <div class="speaker-name">Nena Dokuzov</div>
-                        <div class="speaker-caption">(Alserkal Group)</div>
-                    </li>
-                    <li class="speaker-card">
-                        <img class="speaker" src="./src/images/speaker8.png" alt="">
-                        <div class="speaker-name">Reece Merrick</div>
-                        <div class="speaker-caption">(Ripple)</div>
-                    </li>
-                    <li class="speaker-card">
-                        <img class="speaker" src="./src/images/speaker9.png" alt="">
-                        <div class="speaker-name">Dina Sam'an</div>
-                        <div class="speaker-caption">(CoinMENA)</div>
-                    </li>
-                    <li class="speaker-card">
-                        <img class="speaker" src="./src/images/speaker10.png" alt="">
-                        <div class="speaker-name">Jean Charles-Gaudechon</div>
-                        <div class="speaker-caption">(OneFootball Labs)</div>
-                    </li>
-                    <li class="speaker-card">
-                        <img class="speaker" src="./src/images/speaker11.png" alt="">
-                        <div class="speaker-name">Nicole Purin</div>
-                        <div class="speaker-caption">(OKX)</div>
-                    </li>
-                    <li class="speaker-card">
-                        <img class="speaker" src="./src/images/speaker12.png" alt="">
-                        <div class="speaker-name">Jason Allegrante</div>
-                        <div class="speaker-caption">(Fireblocks)</div>
-                    </li>
-                </ol>
-            </div>
+            <ol class="speakers-list">
+                <li class="speaker-card">
+                    <img class="speaker" src="./src/images/speaker1.png" alt="">
+                    <div class="speaker-name">Sunny Lu</div>
+                    <div class="speaker-caption">(Vechain)</div>
+                </li>
+                <li class="speaker-card">
+                    <img class="speaker" src="./src/images/speaker2.png" alt="">
+                    <div class="speaker-name">Helen Hai</div>
+                    <div class="speaker-caption">(Binance)</div>
+                </li>
+                <li class="speaker-card">
+                    <img class="speaker" src="./src/images/speaker3.png" alt="">
+                    <div class="speaker-name">Alex Zinder</div>
+                    <div class="speaker-caption">(Ledger Enterprise)</div>
+                </li>
+                <li class="speaker-card">
+                    <img class="speaker" src="./src/images/speaker4.png" alt="">
+                    <div class="speaker-name">Gracy Chen</div>
+                    <div class="speaker-caption">(Bitget)</div>
+                </li>
+                <li class="speaker-card">
+                    <img class="speaker" src="./src/images/speaker5.png" alt="">
+                    <div class="speaker-name">Mohammed Alblooshi</div>
+                    <div class="speaker-caption">(Dubai International Financial Centre Authority)</div>
+                </li>
+                <li class="speaker-card">
+                    <img class="speaker" src="./src/images/speaker6.png" alt="">
+                    <div class="speaker-name">Max Kordek</div>
+                    <div class="speaker-caption">(Lisk)</div>
+                </li>
+                <li class="speaker-card">
+                    <img class="speaker" src="./src/images/speaker7.png" alt="">
+                    <div class="speaker-name">Nena Dokuzov</div>
+                    <div class="speaker-caption">(Alserkal Group)</div>
+                </li>
+                <li class="speaker-card">
+                    <img class="speaker" src="./src/images/speaker8.png" alt="">
+                    <div class="speaker-name">Reece Merrick</div>
+                    <div class="speaker-caption">(Ripple)</div>
+                </li>
+                <li class="speaker-card">
+                    <img class="speaker" src="./src/images/speaker9.png" alt="">
+                    <div class="speaker-name">Dina Sam'an</div>
+                    <div class="speaker-caption">(CoinMENA)</div>
+                </li>
+                <li class="speaker-card">
+                    <img class="speaker" src="./src/images/speaker10.png" alt="">
+                    <div class="speaker-name">Jean Charles-Gaudechon</div>
+                    <div class="speaker-caption">(OneFootball Labs)</div>
+                </li>
+                <li class="speaker-card">
+                    <img class="speaker" src="./src/images/speaker11.png" alt="">
+                    <div class="speaker-name">Nicole Purin</div>
+                    <div class="speaker-caption">(OKX)</div>
+                </li>
+                <li class="speaker-card">
+                    <img class="speaker" src="./src/images/speaker12.png" alt="">
+                    <div class="speaker-name">Jason Allegrante</div>
+                    <div class="speaker-caption">(Fireblocks)</div>
+                </li>
+            </ol>
         </div>
     </section>
     <section id="sponsors" class="sponsors-section">
         <div class="wrapper">
             <h2 class="title">SPONSORS</h2>
             <ol class="sponsors-list">
-                <li class="sponsor"><img src="./src/images/sponsor1.png" alt=""></li>
-                <li class="sponsor"><img src="./src/images/sponsor2.png" alt=""></li>
-                <li class="sponsor"><img src="./src/images/sponsor3.png" alt=""></li>
-                <li class="sponsor"><img src="./src/images/sponsor4.png" alt=""></li>
-                <li class="sponsor"><img src="./src/images/sponsor5.png" alt=""></li>
-                <li class="sponsor"><img src="./src/images/sponsor6.png" alt=""></li>
-                <li class="sponsor"><img src="./src/images/sponsor7.png" alt=""></li>
-                <li class="sponsor"><img src="./src/images/sponsor8.png" alt=""></li>
+                <li class="sponsor-card"><img src="./src/images/sponsor1.png" alt=""></li>
+                <li class="sponsor-card"><img src="./src/images/sponsor2.png" alt=""></li>
+                <li class="sponsor-card"><img src="./src/images/sponsor3.png" alt=""></li>
+                <li class="sponsor-card"><img src="./src/images/sponsor4.png" alt=""></li>
+                <li class="sponsor-card"><img src="./src/images/sponsor5.png" alt=""></li>
+                <li class="sponsor-card"><img src="./src/images/sponsor6.png" alt=""></li>
+                <li class="sponsor-card"><img src="./src/images/sponsor7.png" alt=""></li>
+                <li class="sponsor-card"><img src="./src/images/sponsor8.png" alt=""></li>
             </ol>
         </div>
     </section>

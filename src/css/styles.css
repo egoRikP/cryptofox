@@ -6,12 +6,12 @@
 
 a {
     text-decoration: none;
-    color: inherit;
 }
 
 ul, ol, li {
     list-style: none;
 }
+
 
 body {
     background-color: #010101;
@@ -28,6 +28,7 @@ body {
     }
 }
 
+
 .wrapper {
     max-width: 1780px;
     margin: 0 auto;
@@ -35,7 +36,7 @@ body {
 }
 
 .header-section {
-    height: 960px;
+    min-height: 960px;
     overflow: hidden;
 }
 
@@ -63,6 +64,16 @@ body {
     align-items: center;
 }
 
+.menu-burger-button {
+    background-color: transparent;
+    display: none;
+}
+
+.menu-burger {
+    width: 50px;
+    height: 40px;
+}
+
 .menu-navigation {
     display: flex;
     gap: 30px;
@@ -70,11 +81,17 @@ body {
     font-weight: 500;
 }
 
-.menu-navigation li:hover {
+.menu-navigation a {
+    color: #F5F5F5;
+    transition: color 0.1s ease-in-out;
+
+}
+
+.menu-navigation a:hover {
     color: #E2E2E2;
 }
 
-.menu-navigation li:active {
+.menu-navigation a:active {
     color: #FF6F00;
 }
 
@@ -183,7 +200,8 @@ body {
 
 
 .about-section {
-    height: 910px;
+    min-height: 910px;
+    height: fit-content;
     overflow: hidden;
 }
 
@@ -212,7 +230,8 @@ body {
 }
 
 .topics-section {
-    height: 1800px;
+    min-height: 1800px;
+    height: fit-content;
     overflow: hidden;
 }
 
@@ -221,6 +240,7 @@ body {
 }
 
 .topics-list {
+    margin-top: 123px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -254,37 +274,55 @@ body {
     position: absolute;
     z-index: -1;
     left: -100px;
-    top: 1184px;
+    bottom: -210px;
 }
 
 
 .speakers-section {
     min-height: 1979px;
+    height: fit-content;
 }
 
 .speakers-section .title {
     margin: 0;
 }
 
-.speakers {
+.speakers-list {
     margin-top: 123px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
-.speakers-list {
-    justify-content: center;
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
+.speakers-list.show {
+    opacity: 1;
+    transition: transform 0.5s ease-in-out;
 }
 
 .speakers-list li:hover {
-    padding: 10px;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
     border-radius: 160px;
     background-color: #6B6B6B;
 }
 
 .speaker-card {
-    width: 370px;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.speaker-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.speaker-card {
+    transition: all 0.2s ease-in-out;
+    padding: 30px;
+    width: 350px;
+    height: fit-content;
     cursor: pointer;
 }
 
@@ -327,9 +365,22 @@ body {
     gap: 100px;
 }
 
+.sponsor-card {
+    opacity: 0;
+    transform: scale(0.7);
+}
+
+.sponsor-card.show {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+
 .sponsors-list li:hover {
     cursor: pointer;
     background-color: #E2E2E2;
+    transition: background-color 0.3s ease-in-out;
 }
 
 
@@ -468,8 +519,72 @@ body {
     border-radius: 4px;
 }
 
-.active {
+.active-popup {
     visibility: visible;
     opacity: 1;
     position: fixed;
+}
+
+.menu-burger-button {
+    display: none;
+}
+
+.responsive-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(47, 47, 47, 0.5);
+    width: 20%;
+    height: 100%;
+    z-index: 100;
+}
+
+.responsive-menu-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+@media (max-width: 1300px) {
+    .about-section-content {
+        display: block;
+        height: fit-content;
+    }
+}
+
+/*Responsive menu*/
+
+@media (max-width: 1534px) {
+
+    .menu .menu-buttons {
+        display: none;
+    }
+
+    .menu-burger-button {
+        display: block;
+        z-index: 100;
+    }
+
+    .responsive-menu-content .menu-navigation {
+        display: none;
+    }
+
+    .responsive-menu.active {
+        display: block;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .menu .menu-navigation {
+        display: none;
+    }
+
+    .responsive-menu-content .menu-navigation {
+        display: block;
+    }
 }
