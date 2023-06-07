@@ -24,7 +24,7 @@ const sponsors = document.querySelectorAll('.sponsor-card');
 
 const windowHeight = window.innerHeight;
 
-const delay = 400;
+const delay = 800;
 
 function revealElements(elements) {
     elements.forEach((element, index) => {
