@@ -1,10 +1,10 @@
 const burgerButton = document.querySelector('.burger-button');
+burgerButton.addEventListener('click', toggleMenu);
+
 const menu = document.querySelector('.responsive-menu');
 const responsiveMenu = document.querySelector('.responsive-menu-content');
 
 let isAnimating = false;
-
-burgerButton.addEventListener('click', toggleMenu);
 
 responsiveMenu.addEventListener('click', ({target}) => {
     if (target.matches('button, a')) toggleMenu();
@@ -21,7 +21,7 @@ function toggleMenu() {
     burgerButton.classList.toggle('active');
     responsiveMenu.classList.toggle('active-menu');
     menu.classList.toggle('active-menu');
-    document.body.classList.toggle('no-scroll');
+    document.body.classList.toggle('no-scroll')
 
     setTimeout(() => {
         isAnimating = false;

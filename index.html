@@ -100,19 +100,20 @@
                 Discussion Topics:
             </h2>
             <ol class="topics-list">
-                <li>WHAT WEB 3.0 MEANS FOR ENTERPRISES (Sunny Lu)</li>
-                <li>VALUE CREATION IN THE METAVERSE (Gracy Chen)</li>
-                <li>THE ROLE OF STABLECOINS IN A DECENTRALIZED ECOSYSTEM (Nena Dokuzov & Jean Charles Gaudechon)
+                <li class="topic">WHAT WEB 3.0 MEANS FOR ENTERPRISES (Sunny Lu)</li>
+                <li class="topic">VALUE CREATION IN THE METAVERSE (Gracy Chen)</li>
+                <li class="topic">THE ROLE OF STABLECOINS IN A DECENTRALIZED ECOSYSTEM (Nena Dokuzov & Jean Charles
+                    Gaudechon)
                 </li>
-                <li>DAOS: NEW BREED OF INTERNET-NATIVE ORGANIZATIONS (Max Kordek)</li>
-                <li>MAXIMIZING ESG IMPACT WITH BLOCKCHAIN (Helen Hai)</li>
-                <li>BRIDGING DEFI AND CEFI (Jason Allegrante)</li>
-                <li>WEB 3 GAMING: THE NEW FRONTIER? (Sunny Lu)</li>
-                <li>DECRYPTING THE REGULATORY LANDSCAPE OF VIRTUAL ASSETS (Reece Merrick)</li>
-                <li>CENTRAL BANK DIGITAL CURRENCIES, AND CROSS-BORDER PAYMENTS (Mohammed Alblooshi)</li>
-                <li>WEB 3: THE FUTURE IS HERE AND NOW (Sunny Lu)</li>
-                <li>NFT MARKET OVERVIEW: TRENDS & OPPORTUNITIES (Alex Zinder & Nicole Purin)</li>
-                <li>INTEROPERABILITY - CHALLENGES AND OPPORTUNITIES (Dina Sam'an)</li>
+                <li class="topic">DAOS: NEW BREED OF INTERNET-NATIVE ORGANIZATIONS (Max Kordek)</li>
+                <li class="topic">MAXIMIZING ESG IMPACT WITH BLOCKCHAIN (Helen Hai)</li>
+                <li class="topic">BRIDGING DEFI AND CEFI (Jason Allegrante)</li>
+                <li class="topic">WEB 3 GAMING: THE NEW FRONTIER? (Sunny Lu)</li>
+                <li class="topic">DECRYPTING THE REGULATORY LANDSCAPE OF VIRTUAL ASSETS (Reece Merrick)</li>
+                <li class="topic">CENTRAL BANK DIGITAL CURRENCIES, AND CROSS-BORDER PAYMENTS (Mohammed Alblooshi)</li>
+                <li class="topic">WEB 3: THE FUTURE IS HERE AND NOW (Sunny Lu)</li>
+                <li class="topic">NFT MARKET OVERVIEW: TRENDS & OPPORTUNITIES (Alex Zinder & Nicole Purin)</li>
+                <li class="topic">INTEROPERABILITY - CHALLENGES AND OPPORTUNITIES (Dina Sam'an)</li>
             </ol>
             <img class="bitcoin1" src="./src/images/bitcoin1.png" alt="">
             <img class="bitcoin2" src="./src/images/bitcoin2.png" alt="">
@@ -249,7 +250,7 @@
             <label for="password" class="input-label">Password</label>
             <input id="password" class="popup-input"/>
         </div>
-        <div class="popup-button">Register</div>
+        <div class="popup-button" onclick="buttonSubmit()">Register</div>
     </div>
     <div class="popup-background" onclick="closePopup()"></div>
 </div>
@@ -272,7 +273,7 @@
             <label for="email1" class="input-label">Email</label>
             <input id="email1" class="popup-input"/>
         </div>
-        <div class="popup-button">Become sponsor</div>
+        <button class="popup-button" onclick="buttonSubmit()">Become sponsor</button>
     </div>
     <div class="popup-background" onclick="closePopup()"></div>
 </div>
@@ -295,12 +296,13 @@
             <label for="email2" class="input-label">Email</label>
             <input id="email2" class="popup-input"/>
         </div>
-        <div class="popup-button">Get Tickets</div>
+        <button class="popup-button" onclick="buttonSubmit()">Get Tickets</button>
     </div>
     <div class="popup-background" onclick="closePopup()"></div>
 </div>
 <script src="./src/js/menu.js"></script>
 <script src="./src/js/scrollToSection.js"></script>
 <script src="./src/js/popups.js"></script>
+<script src="./src/js/listAnimation.js"></script>
 </body>
 </html>
