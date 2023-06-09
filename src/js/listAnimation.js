@@ -9,7 +9,7 @@ const sponsors = document.querySelectorAll('.sponsor-card');
 
 const windowHeight = window.innerHeight;
 
-const delay = 300;
+const delay = 350;
 
 const offset = 100;
 

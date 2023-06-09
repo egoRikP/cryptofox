@@ -15,6 +15,11 @@ function openPopup(e) {
     const popup = document.getElementById(`popup-${popupId}-container`);
     popup.classList.toggle('active-popup');
     document.body.classList.add('no-scroll');
+
+    document.body.addEventListener('click', ({target}) => {
+        if (target === popup) closePopup();
+    });
+
     if (e.target.closest('.responsive-menu')) {
         document.body.classList.toggle('no-scroll');
     } else {
