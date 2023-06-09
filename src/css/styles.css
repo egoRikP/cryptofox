@@ -353,7 +353,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .speakers-list li:hover {
